@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="expected_resolution_width">1800</integer>
+    <integer name="expected_resolution_height">2880</integer>
+
+</resources>

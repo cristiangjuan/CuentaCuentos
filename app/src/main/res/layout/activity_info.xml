@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.cuentacuentos.InfoActivity"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:id="@+id/controls_top_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="end"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_music"
+            android:layout_width="@dimen/diameter_logo_btns"
+            android:layout_height="@dimen/diameter_logo_btns"
+            android:src="@drawable/ic_music_note_white_18dp"
+            android:background="@drawable/transition_toolbar_icon_on_off_info"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="25dp">
+        </ImageButton>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/controls_top_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:gravity="start"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/diameter_logo_btns"
+            android:layout_height="@dimen/diameter_logo_btns"
+            android:src="@drawable/ic_arrow_left_white_18dp"
+            android:background="@drawable/round_info_btn"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="25dp"
+            android:visibility="visible">
+        </ImageButton>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logo_beast_purple_112dp"
+        android:paddingBottom="160dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/text_layout_book"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_text_layout_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_main_text_hidden_info_not_visible"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/category_text_layout_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/category_icon_book"
+                    android:src="@drawable/ic_book_open_page_variant_purple_dark_24dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/category_text_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/info_book_category"
+                    android:textColor="@color/purple_dark"
+                    android:textSize="@dimen/superior_text">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/name_text_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_info_text"
+                android:layout_marginLeft="10dp"
+                android:text="@string/info_book_name"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/inferior_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_web_layout_book"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_first"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_web_icon_book"
+                android:src="@drawable/ic_web_purple_dark_18dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_web_name_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_book_web"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_mail_layout_book"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_second"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_mail_icon_book"
+                android:src="@drawable/ic_email_purple_dark_18dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_mail_text_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_book_mail"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_tlf_layout_book"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_third"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_tlf_icon_book"
+                android:src="@drawable/ic_phone_purple_dark_18dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_tlf_text_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_book_tlf"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text"
+                android:visibility="invisible">
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_layout_ilus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/main_text_layout_ilus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_main_text_hidden_info_not_visible"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/category_text_layout_ilus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/category_icon_ilus"
+                    android:src="@drawable/ic_palette_purple_dark_24dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/category_text_ilus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/info_ilus_category"
+                    android:textColor="@color/purple_dark"
+                    android:textSize="@dimen/superior_text">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/name_text_ilus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_info_text"
+                android:layout_marginLeft="10dp"
+                android:text="@string/info_ilus_name"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/inferior_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_web_layout_ilus"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_first"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_web_icon_ilus"
+                android:src="@drawable/ic_web_purple_dark_18dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_web_name_ilus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_ilus_web"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_mail_layout_ilus"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_second"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_mail_icon_ilus"
+                android:src="@drawable/ic_email_purple_dark_18dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_mail_text_ilus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_ilus_mail"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_tlf_layout_ilus"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_third"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_tlf_icon_ilus"
+                android:src="@drawable/ic_phone_purple_dark_18dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_tlf_text_ilus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_ilus_tlf"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_layout_prog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/main_text_layout_prog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_main_text_hidden_info_not_visible"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/category_text_layout_prog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/category_icon_prog"
+                    android:src="@drawable/ic_laptop_windows_purple_dark_24dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/category_text_prog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/info_prog_category"
+                    android:textColor="@color/purple_dark"
+                    android:textSize="@dimen/superior_text">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/name_text_prog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_info_text"
+                android:layout_marginLeft="10dp"
+                android:text="@string/info_prog_name"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/inferior_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_web_layout_prog"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_first"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_web_icon_prog"
+                android:src="@drawable/ic_web_purple_dark_18dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_web_name_prog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_ilus_web"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_mail_layout_prog"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_second"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_mail_icon_prog"
+                android:src="@drawable/ic_email_purple_dark_18dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_mail_text_prog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_prog_mail"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_tlf_layout_prog"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_third"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_tlf_icon_prog"
+                android:src="@drawable/ic_phone_purple_dark_18dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_tlf_text_prog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_prog_tlf"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_layout_escr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/main_text_layout_escr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_main_text_hidden_info_not_visible"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/category_layout_escr"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/category_icon_escr"
+                    android:src="@drawable/ic_pen_purple_dark_24dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/category_escr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/info_escr_category"
+                    android:textColor="@color/purple_dark"
+                    android:textSize="@dimen/superior_text">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/name_text_escr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_info_text"
+                android:layout_marginLeft="10dp"
+                android:text="@string/info_escr_name"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/inferior_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_web_layout_escr"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_first"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_web_icon_escr"
+                android:src="@drawable/ic_web_purple_dark_18dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_web_name_escr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_ilus_web"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_mail_layout_escr"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_second"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_mail_icon_escr"
+                android:src="@drawable/ic_email_purple_dark_18dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_mail_text_escr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_ilus_mail"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_tlf_layout_escr"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_third"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_tlf_icon_escr"
+                android:src="@drawable/ic_phone_purple_dark_18dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_tlf_text_escr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_ilus_tlf"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_layout_narr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/main_text_layout_narr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_main_text_hidden_info_not_visible"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/category_layout_narr"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/category_icon_narr"
+                    android:src="@drawable/ic_microphone_variant_purple_dark_24dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/category_text_narr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/info_narr_category"
+                    android:textColor="@color/purple_dark"
+                    android:textSize="@dimen/superior_text">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/name_text_narr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_info_text"
+                android:layout_marginLeft="10dp"
+                android:text="@string/info_narr_name"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/inferior_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_web_layout_narr"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_first"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_web_icon_narr"
+                android:src="@drawable/ic_web_purple_dark_18dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_web_name_narr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_ilus_web"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_mail_layout_narr"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_second"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_mail_icon_narr"
+                android:src="@drawable/ic_email_purple_dark_18dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_mail_text_narr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_ilus_mail"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_tlf_layout_narr"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_third"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_tlf_icon_narr"
+                android:src="@drawable/ic_phone_purple_dark_18dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_tlf_text_narr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_ilus_tlf"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_layout_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/main_text_layout_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_main_text_hidden_info_not_visible"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/category_layout_music"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/category_icon_music"
+                    android:src="@drawable/ic_music_note_purple_dark_24dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/category_text_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/info_music_category"
+                    android:textColor="@color/purple_dark"
+                    android:textSize="@dimen/superior_text">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/name_text_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_info_text"
+                android:layout_marginLeft="10dp"
+                android:text="@string/info_music_name"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/inferior_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_web_layout_music"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_first_music"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_web_icon_music"
+                android:src="@drawable/ic_web_purple_dark_18dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_web_name_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_music_web"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_songs_layout_music"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_second_music"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hidden_text_songs_icon_music"
+                android:src="@drawable/ic_music_note_purple_dark_18dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/hidden_text_songs_text_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:text="@string/info_music_songs"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_text_license_layout_music"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_hidden_third_music"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:id="@+id/hidden_text_license_layout_horizontal_music"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/hidden_text_license_icon_music"
+                    android:src="@drawable/ic_copyright_purple_dark_18dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/hidden_text_license_text_music_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7.5dp"
+                    android:text="@string/info_music_license_1"
+                    android:textColor="@color/color_accent_700"
+                    android:textSize="@dimen/hidden_text">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hidden_text_license_text_music_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_music_license_2"
+                android:textColor="@color/color_accent_700"
+                android:textSize="@dimen/hidden_text">
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/step_dot_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_stepdots">
+
+        <View
+            android:id="@+id/step_dot_book"
+            android:layout_width="@dimen/diameter_stepdots"
+            android:layout_height="@dimen/diameter_stepdots"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/transition_step_dot"/>
+
+        <View
+            android:id="@+id/step_dot_ilus"
+            android:layout_width="@dimen/diameter_stepdots"
+            android:layout_height="@dimen/diameter_stepdots"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/transition_step_dot"/>
+
+        <View
+            android:id="@+id/step_dot_prog"
+            android:layout_width="@dimen/diameter_stepdots"
+            android:layout_height="@dimen/diameter_stepdots"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/transition_step_dot"/>
+
+        <View
+            android:id="@+id/step_dot_escr"
+            android:layout_width="@dimen/diameter_stepdots"
+            android:layout_height="@dimen/diameter_stepdots"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/transition_step_dot"/>
+
+        <View
+            android:id="@+id/step_dot_narr"
+            android:layout_width="@dimen/diameter_stepdots"
+            android:layout_height="@dimen/diameter_stepdots"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/transition_step_dot"/>
+
+        <View
+            android:id="@+id/step_dot_music"
+            android:layout_width="@dimen/diameter_stepdots"
+            android:layout_height="@dimen/diameter_stepdots"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/transition_step_dot"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/color_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/color_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple">
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/revealLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple"
+        android:visibility="invisible">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/arrow_left_btn"
+            android:layout_width="@dimen/diameter_arrow_btn"
+            android:layout_height="@dimen/diameter_arrow_btn"
+            android:layout_marginBottom="@dimen/margin_vertical_arrow_btn"
+            android:layout_gravity="center|bottom"
+            android:layout_marginEnd="@dimen/margin_horizontal_arrow_btn"
+            android:src="@drawable/ic_arrow_left_white_18dp"
+            android:background="@drawable/round_accent_btn"
+            android:visibility="invisible">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/arrow_right_btn"
+            android:layout_width="@dimen/diameter_arrow_btn"
+            android:layout_height="@dimen/diameter_arrow_btn"
+            android:layout_marginBottom="@dimen/margin_vertical_arrow_btn"
+            android:layout_gravity="center|bottom"
+            android:layout_marginStart="@dimen/margin_horizontal_arrow_btn"
+            android:src="@drawable/ic_arrow_right_white_18dp"
+            android:background="@drawable/round_accent_btn"
+            android:visibility="invisible">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/background_button"
+            android:layout_width="@dimen/diameter_play_btn_big"
+            android:layout_height="@dimen/diameter_play_btn_big"
+            android:layout_marginBottom="@dimen/margin_play_btn_big"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/round_accent_btn">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/more_button"
+            android:layout_width="@dimen/diameter_play_btn_big"
+            android:layout_height="@dimen/diameter_play_btn_big"
+            android:layout_marginBottom="@dimen/margin_play_btn_big"
+            android:layout_gravity="center|bottom"
+            android:src="@drawable/ic_plus_white_18dp"
+            android:background="@android:color/transparent"
+            android:visibility="invisible">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/less_button"
+            android:layout_width="@dimen/diameter_play_btn_big"
+            android:layout_height="@dimen/diameter_play_btn_big"
+            android:layout_marginBottom="@dimen/margin_play_btn_big"
+            android:layout_gravity="center|bottom"
+            android:src="@drawable/ic_minus_white_18dp"
+            android:background="@android:color/transparent"
+            android:visibility="invisible">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="@dimen/diameter_play_btn_big"
+            android:layout_height="@dimen/diameter_play_btn_big"
+            android:layout_marginBottom="@dimen/margin_play_btn_big"
+            android:layout_gravity="center|bottom"
+            android:src="@drawable/ic_play_white_24dp"
+            android:background="@android:color/transparent">
+        </ImageButton>
+
+    </FrameLayout>
+
+</RelativeLayout>
