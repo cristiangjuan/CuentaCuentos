@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_anim_music_off_on"  android:oneshot="false" >
+    
+    
+    <item android:drawable="@drawable/vicen_logo_orig_25" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_24" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_23" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_22" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_21" android:duration="80" />
+
+    <item android:drawable="@drawable/vicen_logo_orig_20" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_19" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_18" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_17" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_16" android:duration="80" />
+
+    <item android:drawable="@drawable/vicen_logo_orig_15" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_14" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_13" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_12" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_11" android:duration="80" />
+
+    <item android:drawable="@drawable/vicen_logo_orig_10" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_09" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_08" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_07" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_06" android:duration="80" />
+
+    <item android:drawable="@drawable/vicen_logo_orig_05" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_04" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_03" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_02" android:duration="80" />
+
+    <item android:drawable="@drawable/vicen_logo_orig_02" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_03" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_04" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_05" android:duration="80" />
+
+    <item android:drawable="@drawable/vicen_logo_orig_06" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_07" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_08" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_09" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_10" android:duration="80" />
+
+    <item android:drawable="@drawable/vicen_logo_orig_11" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_12" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_13" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_14" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_15" android:duration="80" />
+
+    <item android:drawable="@drawable/vicen_logo_orig_16" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_17" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_18" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_19" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_20" android:duration="80" />
+
+    <item android:drawable="@drawable/vicen_logo_orig_21" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_22" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_23" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_24" android:duration="80" />
+    <item android:drawable="@drawable/vicen_logo_orig_25" android:duration="80" />
+
+    
+
+    
+    <!-- Frames elapsed = 17 -->
+    
+</animation-list>
